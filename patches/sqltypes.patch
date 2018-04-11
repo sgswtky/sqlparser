@@ -13,7 +13,7 @@ diff -u youtube/vitess/go/sqltypes/bind_variables.go xwb1989/sqlparser/dependenc
 -	"github.com/golang/protobuf/proto"
 -
 -	querypb "github.com/youtube/vitess/go/vt/proto/query"
-+	"github.com/xwb1989/sqlparser/dependency/querypb"
++	"github.com/sgswtky/sqlparser/dependency/querypb"
  )
  
  // NullBindVariable is a bindvar with NULL value.
@@ -38,7 +38,7 @@ diff -u youtube/vitess/go/sqltypes/bind_variables_test.go xwb1989/sqlparser/depe
 -	"github.com/golang/protobuf/proto"
 -
 -	querypb "github.com/youtube/vitess/go/vt/proto/query"
-+	"github.com/xwb1989/sqlparser/dependency/querypb"
++	"github.com/sgswtky/sqlparser/dependency/querypb"
  )
  
  func TestProtoConversions(t *testing.T) {
@@ -74,7 +74,7 @@ diff -u youtube/vitess/go/sqltypes/plan_value.go xwb1989/sqlparser/dependency/sq
 -	querypb "github.com/youtube/vitess/go/vt/proto/query"
 -	vtrpcpb "github.com/youtube/vitess/go/vt/proto/vtrpc"
 -	"github.com/youtube/vitess/go/vt/vterrors"
-+	"github.com/xwb1989/sqlparser/dependency/querypb"
++	"github.com/sgswtky/sqlparser/dependency/querypb"
  )
  
  // PlanValue represents a value or a list of values for
@@ -137,7 +137,7 @@ diff -u youtube/vitess/go/sqltypes/plan_value_test.go xwb1989/sqlparser/dependen
  	"testing"
  
 -	querypb "github.com/youtube/vitess/go/vt/proto/query"
-+	"github.com/xwb1989/sqlparser/dependency/querypb"
++	"github.com/sgswtky/sqlparser/dependency/querypb"
  )
  
  func TestPlanValueIsNull(t *testing.T) {
@@ -158,7 +158,7 @@ diff -u youtube/vitess/go/sqltypes/testing.go xwb1989/sqlparser/dependency/sqlty
 -	"strings"
 -
 -	querypb "github.com/youtube/vitess/go/vt/proto/query"
-+	querypb "github.com/xwb1989/sqlparser/dependency/querypb"
++	querypb "github.com/sgswtky/sqlparser/dependency/querypb"
  )
  
  // Functions in this file should only be used for testing.
@@ -198,7 +198,7 @@ diff -u youtube/vitess/go/sqltypes/type.go xwb1989/sqlparser/dependency/sqltypes
  	"fmt"
  
 -	querypb "github.com/youtube/vitess/go/vt/proto/query"
-+	"github.com/xwb1989/sqlparser/dependency/querypb"
++	"github.com/sgswtky/sqlparser/dependency/querypb"
  )
  
  // This file provides wrappers and support
@@ -210,7 +210,7 @@ diff -u youtube/vitess/go/sqltypes/type_test.go xwb1989/sqlparser/dependency/sql
  	"testing"
  
 -	querypb "github.com/youtube/vitess/go/vt/proto/query"
-+	"github.com/xwb1989/sqlparser/dependency/querypb"
++	"github.com/sgswtky/sqlparser/dependency/querypb"
  )
  
  func TestTypeValues(t *testing.T) {
@@ -223,11 +223,11 @@ diff -u youtube/vitess/go/sqltypes/value.go xwb1989/sqlparser/dependency/sqltype
  
 -	"github.com/youtube/vitess/go/bytes2"
 -	"github.com/youtube/vitess/go/hack"
-+	"github.com/xwb1989/sqlparser/dependency/bytes2"
-+	"github.com/xwb1989/sqlparser/dependency/hack"
++	"github.com/sgswtky/sqlparser/dependency/bytes2"
++	"github.com/sgswtky/sqlparser/dependency/hack"
  
 -	querypb "github.com/youtube/vitess/go/vt/proto/query"
-+	"github.com/xwb1989/sqlparser/dependency/querypb"
++	"github.com/sgswtky/sqlparser/dependency/querypb"
  )
  
  var (
@@ -239,7 +239,7 @@ diff -u youtube/vitess/go/sqltypes/value_test.go xwb1989/sqlparser/dependency/sq
  	"testing"
  
 -	querypb "github.com/youtube/vitess/go/vt/proto/query"
-+	"github.com/xwb1989/sqlparser/dependency/querypb"
++	"github.com/sgswtky/sqlparser/dependency/querypb"
  )
  
  const (

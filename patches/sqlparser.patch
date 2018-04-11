@@ -19,7 +19,7 @@ diff -u youtube/vitess/go/vt/sqlparser/analyzer.go xwb1989/sqlparser/analyzer.go
 -	"github.com/youtube/vitess/go/sqltypes"
 -	vtrpcpb "github.com/youtube/vitess/go/vt/proto/vtrpc"
 -	"github.com/youtube/vitess/go/vt/vterrors"
-+	"github.com/xwb1989/sqlparser/dependency/sqltypes"
++	"github.com/sgswtky/sqlparser/dependency/sqltypes"
  )
  
  // These constants are used to identify the SQL statement type.
@@ -67,7 +67,7 @@ diff -u youtube/vitess/go/vt/sqlparser/analyzer_test.go xwb1989/sqlparser/analyz
  	"testing"
  
 -	"github.com/youtube/vitess/go/sqltypes"
-+	"github.com/xwb1989/sqlparser/dependency/sqltypes"
++	"github.com/sgswtky/sqlparser/dependency/sqltypes"
  )
  
  func TestPreview(t *testing.T) {
@@ -90,8 +90,8 @@ diff -u youtube/vitess/go/vt/sqlparser/ast.go xwb1989/sqlparser/ast.go
 -	querypb "github.com/youtube/vitess/go/vt/proto/query"
 -	vtrpcpb "github.com/youtube/vitess/go/vt/proto/vtrpc"
 -	"github.com/youtube/vitess/go/vt/vterrors"
-+	"github.com/xwb1989/sqlparser/dependency/querypb"
-+	"github.com/xwb1989/sqlparser/dependency/sqltypes"
++	"github.com/sgswtky/sqlparser/dependency/querypb"
++	"github.com/sgswtky/sqlparser/dependency/sqltypes"
  )
  
  // Instructions for creating new types: If a type
@@ -214,7 +214,7 @@ diff -u youtube/vitess/go/vt/sqlparser/ast_test.go xwb1989/sqlparser/ast_test.go
  	"unsafe"
  
 -	"github.com/youtube/vitess/go/sqltypes"
-+	"github.com/xwb1989/sqlparser/dependency/sqltypes"
++	"github.com/sgswtky/sqlparser/dependency/sqltypes"
  )
  
  func TestAppend(t *testing.T) {
@@ -260,7 +260,7 @@ diff -u youtube/vitess/go/vt/sqlparser/encodable.go xwb1989/sqlparser/encodable.
  	"bytes"
  
 -	"github.com/youtube/vitess/go/sqltypes"
-+	"github.com/xwb1989/sqlparser/dependency/sqltypes"
++	"github.com/sgswtky/sqlparser/dependency/sqltypes"
  )
  
  // This file contains types that are 'Encodable'.
@@ -272,7 +272,7 @@ diff -u youtube/vitess/go/vt/sqlparser/encodable_test.go xwb1989/sqlparser/encod
  	"testing"
  
 -	"github.com/youtube/vitess/go/sqltypes"
-+	"github.com/xwb1989/sqlparser/dependency/sqltypes"
++	"github.com/sgswtky/sqlparser/dependency/sqltypes"
  )
  
  func TestEncodable(t *testing.T) {
@@ -285,10 +285,10 @@ diff -u youtube/vitess/go/vt/sqlparser/normalizer.go xwb1989/sqlparser/normalize
  	"fmt"
  
 -	"github.com/youtube/vitess/go/sqltypes"
-+	"github.com/xwb1989/sqlparser/dependency/sqltypes"
++	"github.com/sgswtky/sqlparser/dependency/sqltypes"
  
 -	querypb "github.com/youtube/vitess/go/vt/proto/query"
-+	"github.com/xwb1989/sqlparser/dependency/querypb"
++	"github.com/sgswtky/sqlparser/dependency/querypb"
  )
  
  // Normalize changes the statement to use bind values, and
@@ -301,8 +301,8 @@ diff -u youtube/vitess/go/vt/sqlparser/normalizer_test.go xwb1989/sqlparser/norm
  
 -	"github.com/youtube/vitess/go/sqltypes"
 -	querypb "github.com/youtube/vitess/go/vt/proto/query"
-+	"github.com/xwb1989/sqlparser/dependency/querypb"
-+	"github.com/xwb1989/sqlparser/dependency/sqltypes"
++	"github.com/sgswtky/sqlparser/dependency/querypb"
++	"github.com/sgswtky/sqlparser/dependency/sqltypes"
  )
  
  func TestNormalize(t *testing.T) {
@@ -443,10 +443,10 @@ diff -u youtube/vitess/go/vt/sqlparser/parsed_query.go xwb1989/sqlparser/parsed_
  	"fmt"
  
 -	"github.com/youtube/vitess/go/sqltypes"
-+	"github.com/xwb1989/sqlparser/dependency/sqltypes"
++	"github.com/sgswtky/sqlparser/dependency/sqltypes"
  
 -	querypb "github.com/youtube/vitess/go/vt/proto/query"
-+	"github.com/xwb1989/sqlparser/dependency/querypb"
++	"github.com/sgswtky/sqlparser/dependency/querypb"
  )
  
  // ParsedQuery represents a parsed query where
@@ -458,10 +458,10 @@ diff -u youtube/vitess/go/vt/sqlparser/parsed_query_test.go xwb1989/sqlparser/pa
  	"testing"
  
 -	"github.com/youtube/vitess/go/sqltypes"
-+	"github.com/xwb1989/sqlparser/dependency/sqltypes"
++	"github.com/sgswtky/sqlparser/dependency/sqltypes"
  
 -	querypb "github.com/youtube/vitess/go/vt/proto/query"
-+	"github.com/xwb1989/sqlparser/dependency/querypb"
++	"github.com/sgswtky/sqlparser/dependency/querypb"
  )
  
  func TestNewParsedQuery(t *testing.T) {
@@ -4299,8 +4299,8 @@ diff -u youtube/vitess/go/vt/sqlparser/token.go xwb1989/sqlparser/token.go
  
 -	"github.com/youtube/vitess/go/bytes2"
 -	"github.com/youtube/vitess/go/sqltypes"
-+	"github.com/xwb1989/sqlparser/dependency/bytes2"
-+	"github.com/xwb1989/sqlparser/dependency/sqltypes"
++	"github.com/sgswtky/sqlparser/dependency/bytes2"
++	"github.com/sgswtky/sqlparser/dependency/sqltypes"
  )
  
  const eofChar = 0x100
